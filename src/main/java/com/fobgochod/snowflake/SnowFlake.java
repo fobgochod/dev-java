@@ -1,4 +1,4 @@
-package com.fobgochod;
+package com.fobgochod.snowflake;
 
 /**
  * Twitter的分布式自增ID雪花算法snowflake

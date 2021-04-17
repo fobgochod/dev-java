@@ -1,2 +1,4 @@
 .idea/
-out/
+.logs/
+java-examples.iml
+target/
