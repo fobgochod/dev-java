@@ -28,18 +28,22 @@ public class SocketBIO {
                         // 阻塞2
                         String dataline = reader.readLine();
 
-                        if (dataline != null) {
-                            System.out.println(dataline);
-                        } else {
+                        if (dataline == null || "exit".equals(dataline)) {
                             client.close();
                             break;
+                        } else {
+                            println(Thread.currentThread(), dataline);
                         }
                     }
-                    System.out.println("客户端断开");
+                    println(Thread.currentThread(), "客户端断开");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }).start();
         }
+    }
+
+    public static void println(Thread thread, String msg) {
+        System.out.printf("[%s]: [%s]\n", thread.getName(), msg);
     }
 }

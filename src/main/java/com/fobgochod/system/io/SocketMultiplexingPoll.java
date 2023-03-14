@@ -23,8 +23,8 @@ import java.util.Set;
  */
 public class SocketMultiplexingPoll {
 
-    private ServerSocketChannel server = null;
     int port = 9090;
+    private ServerSocketChannel server = null;
     private Selector selector = null;
 
 
@@ -60,7 +60,6 @@ public class SocketMultiplexingPoll {
             while (true) {
                 Set<SelectionKey> keys = selector.keys();
                 System.out.println(keys.size() + "   size");
-
                 // 第一次循环：poll([{fd=7, events=POLLIN}, {fd=6, events=POLLIN}], 2, -1) = 1 ([{fd=6, revents=POLLIN}])
                 // 第二次循环：poll([{fd=7, events=POLLIN}, {fd=6, events=POLLIN}, {fd=9, events=POLLIN}], 3, -1) = 1 ([{fd=9, revents=POLLIN}])
                 while (selector.select() > 0) {
@@ -107,10 +106,14 @@ public class SocketMultiplexingPoll {
         SocketChannel client = (SocketChannel) key.channel();
         ByteBuffer buffer = (ByteBuffer) key.attachment();
         buffer.clear();
-        int read = 0;
+        int read = -1;
         try {
             while (true) {
-                read = client.read(buffer);
+                try {
+                    read = client.read(buffer);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage() + ": " + client);
+                }
                 if (read > 0) {
                     buffer.flip();
                     while (buffer.hasRemaining()) {

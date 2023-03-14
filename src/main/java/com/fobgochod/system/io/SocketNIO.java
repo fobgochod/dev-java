@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.LinkedList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * NIO
@@ -28,7 +29,7 @@ public class SocketNIO {
 
         while (true) {
             // 1、接受客户端的连接
-            Thread.sleep(1000);
+            TimeUnit.SECONDS.sleep(2);
             // 不会阻塞？ -1 NULL
             SocketChannel client = ss.accept();
             /**
@@ -39,14 +40,13 @@ public class SocketNIO {
              */
 
             if (client == null) {
-                System.out.println("null.....");
+                System.out.println("null......");
             } else {
                 // 重点：socket
                 // 服务端的listen socket<连接请求三次握手后，往我这里扔，我去通过accept 得到连接的socket>，
                 // 连接socket<连接后的数据读写使用的>
                 client.configureBlocking(false);
-                int port = client.socket().getPort();
-                System.out.println("client...port: " + port);
+                System.out.println("client...port: " + client.socket().getPort());
                 clients.add(client);
             }
 
@@ -60,11 +60,11 @@ public class SocketNIO {
                 int num = c.read(buffer);
                 if (num > 0) {
                     buffer.flip();
-                    byte[] aaa = new byte[buffer.limit()];
-                    buffer.get(aaa);
+                    byte[] bytes = new byte[buffer.limit()];
+                    buffer.get(bytes);
 
-                    String b = new String(aaa);
-                    System.out.println(c.socket().getPort() + " : " + b);
+                    String str = new String(bytes);
+                    System.out.println(c.socket().getPort() + " : " + str);
                     buffer.clear();
                 }
             }

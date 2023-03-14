@@ -118,10 +118,14 @@ public class SocketMultiplexingEpoll {
         SocketChannel client = (SocketChannel) key.channel();
         ByteBuffer buffer = (ByteBuffer) key.attachment();
         buffer.clear();
-        int read = 0;
+        int read = -1;
         try {
             while (true) {
-                read = client.read(buffer);
+                try {
+                    read = client.read(buffer);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage() + ": " + client);
+                }
                 if (read > 0) {
                     buffer.flip();
                     while (buffer.hasRemaining()) {
