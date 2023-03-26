@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * RPC(remote procedure call) -> socket
  * IPC(Inter-Process Communication) -> 管道、信号、socket 跨进程通信
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 16:04
  */
 public class RpcHttpClient {

@@ -5,7 +5,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 /**
  * 客户端连接池
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 16:17
  */
 public class ClientPool {

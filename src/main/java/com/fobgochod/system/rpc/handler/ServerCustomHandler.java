@@ -11,7 +11,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 /**
  * ServerRequestHandler.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 16:12
  */
 public class ServerCustomHandler extends ChannelInboundHandlerAdapter {

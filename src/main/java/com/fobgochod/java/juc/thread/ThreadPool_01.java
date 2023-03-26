@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 /**
  * ExecutorTest.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2022/3/15 22:32
  */
 public class ThreadPool_01 {

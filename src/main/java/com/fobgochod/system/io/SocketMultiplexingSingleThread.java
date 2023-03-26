@@ -19,7 +19,7 @@ import java.util.Set;
  * poll: -Djava.nio.channels.spi.SelectorProvider=sun.nio.ch.PollSelectorProvider
  * epoll: -Djava.nio.channels.spi.SelectorProvider=sun.nio.ch.EPollSelectorProvider
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/7 13:00
  */
 public class SocketMultiplexingSingleThread {

@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 /**
  * 线程池达到最大线程后，只要持续有任务，且间隔低于keepAliveTime，就不会有线程会被回收，哪怕大于corePoolSize
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2022/3/14 22:34
  */
 public class ThreadPool_03 {

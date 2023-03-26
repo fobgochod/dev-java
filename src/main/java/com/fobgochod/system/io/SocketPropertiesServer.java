@@ -12,7 +12,7 @@ import java.net.Socket;
  * BIO 多线程的方式
  * IO Properties
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/5 16:56
  */
 public class SocketPropertiesServer {

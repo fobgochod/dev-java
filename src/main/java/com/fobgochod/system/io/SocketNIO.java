@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * NIO
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/6 14:15
  */
 public class SocketNIO {

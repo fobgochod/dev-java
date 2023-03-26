@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * C10K 客户端
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/6 13:38
  */
 public class SocketClient {

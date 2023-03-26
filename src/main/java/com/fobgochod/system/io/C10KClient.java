@@ -8,7 +8,7 @@ import java.util.LinkedList;
 /**
  * C10K 客户端
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/6 13:38
  */
 public class C10KClient {

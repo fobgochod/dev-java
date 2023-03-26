@@ -10,7 +10,7 @@ import java.net.Socket;
 /**
  * SocketClient.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/5 17:03
  */
 public class SocketPropertiesClient {

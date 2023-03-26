@@ -11,7 +11,7 @@ import java.util.UUID;
  * 2.contentLength: 数据长度
  * 3.UUID: requestId
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 15:28
  */
 public class RpcHeader implements Serializable {

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 不会影响线程池里面其他线程的正常执行。
  * 当执行方式是execute时，线程池会把这个线程移除掉，并创建一个新的线程放到线程池中。
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2022/3/15 22:38
  */
 public class ThreadPool_02 {

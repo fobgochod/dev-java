@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /**
  * 创建线程
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2022/3/13 15:35
  */
 public class Thread_01 {

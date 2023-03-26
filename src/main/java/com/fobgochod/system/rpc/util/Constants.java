@@ -3,7 +3,7 @@ package com.fobgochod.system.rpc.util;
 /**
  * Constants.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 15:37
  */
 public class Constants {

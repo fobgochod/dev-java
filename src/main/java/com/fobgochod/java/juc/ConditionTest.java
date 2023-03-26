@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * ConditionTest.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/12/1 23:05
  */
 public class ConditionTest {

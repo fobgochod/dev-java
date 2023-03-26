@@ -12,7 +12,7 @@ import java.util.concurrent.CompletableFuture;
 /**
  *  ClientNettyHandler.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 22:46
  */
 public class ClientNettyHandler extends ChannelInboundHandlerAdapter {

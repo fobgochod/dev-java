@@ -15,7 +15,7 @@ import java.io.ObjectInputStream;
 /**
  * HttpServletRpcHandler.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 17:03
  */
 public class ServerServletHandler extends HttpServlet {

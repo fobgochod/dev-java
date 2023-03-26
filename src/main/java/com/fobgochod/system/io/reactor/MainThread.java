@@ -3,7 +3,7 @@ package com.fobgochod.system.io.reactor;
 /**
  * MainThread.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/7 18:27
  */
 public class MainThread {

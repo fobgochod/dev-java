@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * TestAqs.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/12/1 21:34
  */
 public class ReentrantLockTest {

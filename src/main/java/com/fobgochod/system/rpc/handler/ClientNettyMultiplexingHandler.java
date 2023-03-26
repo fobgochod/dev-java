@@ -12,7 +12,7 @@ import io.netty.handler.codec.http.FullHttpResponse;
 /**
  * ClientNettyMultiplexingHandler.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 22:46
  */
 public class ClientNettyMultiplexingHandler extends ChannelInboundHandlerAdapter {

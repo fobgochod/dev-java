@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 自定义传输协议
  * 粘包拆包的问题，header+body
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/10 9:52
  */
 public class MyRpcClinet {

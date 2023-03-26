@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * 服务注册和发现
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 15:43
  */
 public class Dispatcher {

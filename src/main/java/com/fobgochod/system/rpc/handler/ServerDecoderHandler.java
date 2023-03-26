@@ -18,7 +18,7 @@ import java.util.List;
  * 父类里一定有channelread{  前老的拼buf  decode（）；剩余留存 ;对out遍历 } -> bytebuf
  * 因为你偷懒，自己能不能实现！
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 16:10
  */
 public class ServerDecoderHandler extends ByteToMessageDecoder {

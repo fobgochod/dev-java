@@ -3,7 +3,7 @@ package com.fobgochod.system.rpc.protocol;
 /**
  *  RpcEntity.java
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 15:30
  */
 public class RpcEntity {

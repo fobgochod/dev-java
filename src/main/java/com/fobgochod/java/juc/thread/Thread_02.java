@@ -7,7 +7,7 @@ import java.util.concurrent.locks.LockSupport;
 /**
  * 线程状态
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2022/3/13 12:45
  */
 public class Thread_02 {

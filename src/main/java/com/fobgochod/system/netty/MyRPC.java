@@ -43,7 +43,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 上节课，基本写了一个能发送
  * 小问题，当并发通过一个连接发送后，服务端解析ByteBuf 转 对象的过程出错
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/8 0:19
  */
 public class MyRPC {

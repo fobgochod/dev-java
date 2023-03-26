@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>
  * 默认是Boss，Boss必须持有Worker，默认持有自己
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/7 18:44
  */
 public class SelectorThreadGroup {

@@ -25,7 +25,7 @@ import java.net.InetSocketAddress;
 /**
  * MyNetty
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/4 20:22
  */
 public class MyNetty {

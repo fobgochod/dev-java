@@ -8,7 +8,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 /**
  * 客户端处理响应的结果
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/9 16:08
  */
 public class ClientCustomHandler extends ChannelInboundHandlerAdapter {

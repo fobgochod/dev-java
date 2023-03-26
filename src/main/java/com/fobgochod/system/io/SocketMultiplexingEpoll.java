@@ -18,7 +18,7 @@ import java.util.Set;
  * 使用strace命令追踪
  * javac SocketMultiplexingEpoll.java && strace -ff -o poll java SocketMultiplexingEpoll
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/7 13:00
  */
 public class SocketMultiplexingEpoll {

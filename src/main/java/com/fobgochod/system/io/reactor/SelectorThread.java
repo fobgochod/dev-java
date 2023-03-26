@@ -17,7 +17,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * 注意，每个客户端，只绑定到其中一个selector
  * 其实不会有交互问题
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/8/7 18:32
  */
 public class SelectorThread extends ThreadLocal<LinkedBlockingQueue<Channel>> implements Runnable {

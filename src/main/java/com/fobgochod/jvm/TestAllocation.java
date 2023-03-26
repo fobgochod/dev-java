@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * VM参数：-XX:+UseSerialGC
  *
- * @author Xiao
+ * @author fobgochod
  * @date 2021/11/6 17:05
  * @see <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html">Java启动参数</a>
  */
