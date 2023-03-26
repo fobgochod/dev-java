@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="factoryMethodPojo1"
+          class="com.fobgochod.spring.ioc.annotation.instantiation.factorymethod.FactoryMethodPojoStaticFactory" factory-method="getPojo">
+        <constructor-arg value="3"/>
+        <constructor-arg value="zhangsan"/>
+    </bean>
+
+    <bean id="personInstanceFactory" class="com.fobgochod.spring.ioc.annotation.instantiation.factorymethod.FactoryMethodPojoInstanceFactory"/>
+
+    <bean id="factoryMethodPojo2" class="com.fobgochod.spring.ioc.annotation.instantiation.factorymethod.FactoryMethodPojo" factory-bean="personInstanceFactory"
+          factory-method="getFactoryMethodPojo">
+        <constructor-arg value="5"/>
+        <constructor-arg value="wangwu"/>
+    </bean>
+</beans>

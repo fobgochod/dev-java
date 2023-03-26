@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:animal="http://www.fobgochod.com/schema/animal"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.fobgochod.com/schema/animal http://www.fobgochod.com/schema/animal.xsd">
+
+    <animal:cat id="Robo" name="萝卜" breed="布偶" birthday="2019-08-22"/>
+
+</beans>
