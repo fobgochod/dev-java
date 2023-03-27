@@ -2,17 +2,24 @@ package com.fobgochod.problem.od2023;
 
 import java.util.Scanner;
 
+/**
+ * 开心消消乐
+ * 例1
+ * 输入
+ * 4 4
+ * 1 1 0 0
+ * 0 0 0 1
+ * 0 0 1 1
+ * 1 1 1 1
+ * 输出
+ * 2
+ * <p>
+ * 示例2
+ * 输入
+ * 输出
+ */
 public class Code017 {
 
-    /**
-     * 4 4
-     * 1 1 0 0
-     * 0 0 0 1
-     * 0 0 1 1
-     * 1 1 1 1
-     * <p>
-     * 2
-     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int row = scanner.nextInt();
@@ -27,6 +34,7 @@ public class Code017 {
             }
         }
 
+
         int count = 0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
@@ -39,6 +47,7 @@ public class Code017 {
 
         System.out.println(count);
     }
+
 
     private static void turnZero(int[][] numbers, int row, int col, int x, int y) {
         numbers[x][y] = 0;

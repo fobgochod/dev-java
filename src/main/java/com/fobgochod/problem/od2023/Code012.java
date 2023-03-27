@@ -2,13 +2,20 @@ package com.fobgochod.problem.od2023;
 
 import java.util.Scanner;
 
+/**
+ * 简单的自动曝光
+ * 例1
+ * 输入
+ * 129 130 129 130
+ * 输出
+ * -2
+ * <p>
+ * 示例2
+ * 输入
+ * 输出
+ */
 public class Code012 {
 
-    /**
-     * 129 130 129 130
-     * <p>
-     * -2
-     */
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

@@ -2,20 +2,23 @@ package com.fobgochod.problem.od2023;
 
 import java.util.Scanner;
 
+
+/**
+ * 光伏场地建设规划
+ * 例1
+ * 输入
+ * 3
+ * head add 1
+ * remove
+ * tail add 2
+ * head add 3
+ * remove
+ * remove
+ * 输出
+ * 1
+ */
 public class Code020 {
 
-    /**
-     * 输入：
-     * 3
-     * head add 1
-     * remove
-     * tail add 2
-     * head add 3
-     * remove
-     * remove
-     * 输出：
-     * 1
-     */
     public static void main(String[] args) {
 
         System.out.println(f1());
