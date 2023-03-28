@@ -1,4 +1,4 @@
-package com.fobgochod.problem.dp;
+package com.fobgochod.problem.solution.dynamic_programming;
 
 public class GoStair {
     //动态规划表，用来记录到达i级台阶的方法数

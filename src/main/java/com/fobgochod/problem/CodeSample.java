@@ -1,4 +1,4 @@
-package com.fobgochod.problem.od2023;
+package com.fobgochod.problem;
 
 /**
  * 题目
@@ -10,7 +10,7 @@ package com.fobgochod.problem.od2023;
  * 输入
  * 输出
  */
-public class Code000 {
+public class CodeSample {
 
     public static void main(String[] args) {
     }

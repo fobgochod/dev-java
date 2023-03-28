@@ -1,4 +1,4 @@
-package com.fobgochod.problem.dp;
+package com.fobgochod.problem.solution.dynamic_programming;
 
 /**
  * 给定一个矩阵m，从左上角开始每次只能向右走或者向下走

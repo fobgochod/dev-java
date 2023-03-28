@@ -1,4 +1,4 @@
-package com.fobgochod.problem.dp;
+package com.fobgochod.problem.solution.dynamic_programming;
 
 public class MaxCommonStr {
 
