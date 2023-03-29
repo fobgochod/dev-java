@@ -5,7 +5,10 @@ import java.util.Comparator;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-
+/**
+ * 0  9  A  Z  a  z
+ * 48 57 65 90 97 122
+ */
 public class CodeTools {
 
     public static void main(String[] args) {

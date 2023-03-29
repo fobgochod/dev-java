@@ -13,7 +13,9 @@ import java.util.Scanner;
  * <p>
  * 示例2
  * 输入
+ * 1,3,5,3,2,1
  * 输出
+ * 13
  */
 public class LeetCode135 {
 
@@ -21,7 +23,7 @@ public class LeetCode135 {
         Scanner scanner = new Scanner(System.in);
         String[] digits = scanner.nextLine().split(",");
         int[] ints = Arrays.stream(digits).mapToInt(Integer::valueOf).toArray();
-        int candy = candy(ints);
+        int candy = candy2(ints);
         System.out.println(candy);
     }
 
@@ -46,4 +48,27 @@ public class LeetCode135 {
         }
         return ret;
     }
+
+    public static int candy2(int[] ratings) {
+        int n = ratings.length;
+        int ret = 1;
+        int inc = 1, dec = 0, pre = 1;
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] >= ratings[i - 1]) {
+                dec = 0;
+                pre = ratings[i] == ratings[i - 1] ? 1 : pre + 1;
+                ret += pre;
+                inc = pre;
+            } else {
+                dec++;
+                if (dec == inc) {
+                    dec++;
+                }
+                ret += dec;
+                pre = 1;
+            }
+        }
+        return ret;
+    }
+
 }
