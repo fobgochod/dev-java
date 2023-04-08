@@ -1,7 +1,7 @@
-package com.fobgochod.spring.aop.aspectj;
+package com.fobgochod.spring.aop.aspect;
 
-import com.fobgochod.spring.aop.aspectj.service.cglib.CglibCalculator;
-import com.fobgochod.spring.aop.aspectj.service.jdk.Calculator;
+import com.fobgochod.spring.aop.aspect.service.cglib.CglibCalculator;
+import com.fobgochod.spring.aop.aspect.service.jdk.Calculator;
 import com.fobgochod.spring.CGlibUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

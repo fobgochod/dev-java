@@ -1,6 +1,6 @@
-package com.fobgochod.spring.aop.aspectj.aspect;
+package com.fobgochod.spring.aop.aspect.aspectj;
 
-import com.fobgochod.spring.aop.aspectj.config.AopLogUtil;
+import com.fobgochod.spring.aop.aspect.util.AopLogUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -19,10 +19,10 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
-public class AopAspect {
+public class AnnoAspect {
 
-    @Pointcut("execution(public int com.fobgochod.spring.aop.aspectj.service.jdk.JdkCalculator.add(int, int))"
-            + " || execution(public int com.fobgochod.spring.aop.aspectj.service.cglib.CglibCalculator.add(int, int))")
+    @Pointcut("execution(public int com.fobgochod.spring.aop.aspect.service.jdk.JdkCalculator.add(int, int))"
+            + " || execution(public int com.fobgochod.spring.aop.aspect.service.cglib.CglibCalculator.add(int, int))")
     public void pointCut() {
     }
 

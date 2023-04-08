@@ -1,4 +1,4 @@
-package com.fobgochod.spring.aop.aspectj.service.jdk;
+package com.fobgochod.spring.aop.aspect.service.jdk;
 
 public interface Calculator {
 

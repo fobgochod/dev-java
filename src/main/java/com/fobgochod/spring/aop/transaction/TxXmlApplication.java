@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author fobgochod
  * @date 2022/4/13 0:20
  */
-public class TransactionXmlApplication {
+public class TxXmlApplication {
 
     public static void main(String[] args) throws Exception {
         CGlibUtils.generatedCGlibProxyFiles("tx");

@@ -7,14 +7,14 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="aopXmlAspect" class="com.fobgochod.spring.aop.aspectj.aspect.AopXmlAspect"/>
-    <bean id="jdkCalculator" class="com.fobgochod.spring.aop.aspectj.service.jdk.JdkCalculator"/>
-    <bean id="cglibCalculator" class="com.fobgochod.spring.aop.aspectj.service.cglib.CglibCalculator"/>
+    <bean id="aopXmlAspect" class="com.fobgochod.spring.aop.aspect.schema.XmlAspect"/>
+    <bean id="jdkCalculator" class="com.fobgochod.spring.aop.aspect.service.jdk.JdkCalculator"/>
+    <bean id="cglibCalculator" class="com.fobgochod.spring.aop.aspect.service.cglib.CglibCalculator"/>
 
     <aop:config>
         <aop:aspect ref="aopXmlAspect">
             <aop:pointcut id="jdkPointCut"
-                          expression="execution(public int com.fobgochod.spring.aop.aspectj.service.jdk.JdkCalculator.add(int, int))"/>
+                          expression="execution(public int com.fobgochod.spring.aop.aspect.service.jdk.JdkCalculator.add(int, int))"/>
             <aop:around method="aroundMethod" pointcut-ref="jdkPointCut"/>
             <aop:before method="beforeMethod" pointcut-ref="jdkPointCut"/>
             <aop:after method="afterMethod" pointcut-ref="jdkPointCut"/>
@@ -24,7 +24,7 @@
 
         <aop:aspect ref="aopXmlAspect">
             <aop:pointcut id="cglibPointCut"
-                          expression="execution(public int com.fobgochod.spring.aop.aspectj.service.cglib.CglibCalculator.add(int, int))"/>
+                          expression="execution(public int com.fobgochod.spring.aop.aspect.service.cglib.CglibCalculator.add(int, int))"/>
             <aop:around method="aroundMethod" pointcut-ref="cglibPointCut"/>
             <aop:before method="beforeMethod" pointcut-ref="cglibPointCut"/>
             <aop:after method="afterMethod" pointcut-ref="cglibPointCut"/>

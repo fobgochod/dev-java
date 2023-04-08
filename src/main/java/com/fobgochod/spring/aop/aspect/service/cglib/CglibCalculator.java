@@ -1,6 +1,6 @@
-package com.fobgochod.spring.aop.aspectj.service.cglib;
+package com.fobgochod.spring.aop.aspect.service.cglib;
 
-import com.fobgochod.spring.aop.aspectj.config.AopLogUtil;
+import com.fobgochod.spring.aop.aspect.util.AopLogUtil;
 import org.springframework.stereotype.Service;
 
 @Service

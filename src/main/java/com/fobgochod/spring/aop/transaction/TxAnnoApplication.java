@@ -10,7 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author fobgochod
  * @date 2022/4/13 0:20
  */
-public class TransactionApplication {
+public class TxAnnoApplication {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();

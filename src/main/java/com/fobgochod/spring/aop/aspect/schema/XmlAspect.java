@@ -1,6 +1,6 @@
-package com.fobgochod.spring.aop.aspectj.aspect;
+package com.fobgochod.spring.aop.aspect.schema;
 
-import com.fobgochod.spring.aop.aspectj.config.AopLogUtil;
+import com.fobgochod.spring.aop.aspect.util.AopLogUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -15,7 +15,7 @@ import org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCre
  * @date 2022/10/5 12:36
  * @see AspectJAwareAdvisorAutoProxyCreator
  */
-public class AopXmlAspect {
+public class XmlAspect {
 
     public Object aroundMethod(ProceedingJoinPoint pjp) throws Throwable {
         Signature signature = pjp.getSignature();

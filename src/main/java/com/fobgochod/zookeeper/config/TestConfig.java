@@ -1,9 +1,9 @@
 package com.fobgochod.zookeeper.config;
 
 import org.apache.zookeeper.ZooKeeper;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,12 +15,12 @@ public class TestConfig {
 
     private ZooKeeper zk;
 
-    @Before
+    @BeforeEach
     public void conn() {
         zk = ZKUtils.getZK();
     }
 
-    @After
+    @AfterEach
     public void close() {
         try {
             zk.close();

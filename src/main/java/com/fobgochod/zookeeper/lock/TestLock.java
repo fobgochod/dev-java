@@ -4,9 +4,9 @@ import com.fobgochod.zookeeper.configurationcenter.DefaultWatch;
 import com.fobgochod.zookeeper.configurationcenter.ZKConf;
 import com.fobgochod.zookeeper.configurationcenter.ZKUtils;
 import org.apache.zookeeper.ZooKeeper;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author: 马士兵教育
@@ -18,7 +18,7 @@ public class TestLock {
     private ZKConf zkConf;
     private DefaultWatch defaultWatch;
 
-    @Before
+    @BeforeEach
     public void conn() {
         zkConf = new ZKConf();
         zkConf.setAddress("172.16.2.96:2181,172.16.2.97:2181,172.16.2.214:2181/lock");
@@ -29,7 +29,7 @@ public class TestLock {
         zk = ZKUtils.getZK();
     }
 
-    @After
+    @AfterEach
     public void close() {
         try {
             zk.close();

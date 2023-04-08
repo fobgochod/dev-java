@@ -5,7 +5,7 @@ import com.fobgochod.system.rpc.proxy.ProxyFactory;
 import com.fobgochod.system.rpc.service.Car;
 import com.fobgochod.system.rpc.service.Person;
 import com.fobgochod.system.rpc.util.Constants;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

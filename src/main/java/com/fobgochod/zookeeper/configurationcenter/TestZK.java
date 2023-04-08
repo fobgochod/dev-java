@@ -1,9 +1,9 @@
 package com.fobgochod.zookeeper.configurationcenter;
 
 import org.apache.zookeeper.ZooKeeper;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +20,7 @@ public class TestZK {
     MyConf confMsg = new MyConf();
     WatchCallBack watchCallback = new WatchCallBack();
 
-    @Before
+    @BeforeEach
     public void conn() {
         zkConf = new ZKConf();
         zkConf.setAddress("172.16.2.96:2181,172.16.2.97:2181,172.16.2.214:2181/config");
@@ -31,7 +31,7 @@ public class TestZK {
         zk = ZKUtils.getZK();
     }
 
-    @After
+    @AfterEach
     public void close() {
         ZKUtils.closeZK();
     }

@@ -1,4 +1,4 @@
-package com.fobgochod.spring.aop.aspectj.config;
+package com.fobgochod.spring.aop.aspect.util;
 
 import java.util.ArrayList;
 import java.util.Iterator;

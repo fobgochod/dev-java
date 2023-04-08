@@ -1,15 +1,15 @@
-package com.fobgochod.spring.aop.aspectj;
+package com.fobgochod.spring.aop.aspect;
 
-import com.fobgochod.spring.aop.aspectj.config.AopConfiguration;
-import com.fobgochod.spring.aop.aspectj.service.cglib.CglibCalculator;
-import com.fobgochod.spring.aop.aspectj.service.jdk.Calculator;
+import com.fobgochod.spring.aop.aspect.aspectj.AnnoConfiguration;
+import com.fobgochod.spring.aop.aspect.service.cglib.CglibCalculator;
+import com.fobgochod.spring.aop.aspect.service.jdk.Calculator;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class AopApplication {
+public class AopAnnoApplication {
 
     public static void main(String[] args) throws NoSuchMethodException {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
-        ac.register(AopConfiguration.class);
+        ac.register(AnnoConfiguration.class);
         ac.refresh();
 
         System.out.println("JdkDynamicAopProxy=================================================================");

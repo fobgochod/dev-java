@@ -16,6 +16,8 @@ public class ConfigurableApplication {
 
     /**
      * JVM options: -javaagent:/path/to/spring-instrument.jar
+     * <p>
+     * -javaagent:src/main/resources/lib/spring-instrument-6.0.7.jar
      */
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();

@@ -1,7 +1,7 @@
-package com.fobgochod.spring.aop.aspectj.config;
+package com.fobgochod.spring.aop.aspect.util;
 
-import com.fobgochod.spring.aop.aspectj.aspect.AopAspect;
-import com.fobgochod.spring.aop.aspectj.aspect.AopXmlAspect;
+import com.fobgochod.spring.aop.aspect.aspectj.AnnoAspect;
+import com.fobgochod.spring.aop.aspect.schema.XmlAspect;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -11,8 +11,8 @@ public class AopLogUtil {
     public static String currentMethod() {
         StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
         for (StackTraceElement traceElement : traceElements) {
-            if (traceElement.getClassName().equals(AopAspect.class.getName())
-                    || traceElement.getClassName().equals(AopXmlAspect.class.getName())) {
+            if (traceElement.getClassName().equals(AnnoAspect.class.getName())
+                    || traceElement.getClassName().equals(XmlAspect.class.getName())) {
                 return traceElement.getMethodName();
             }
         }
