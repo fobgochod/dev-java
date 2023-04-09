@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</OriginalElement>
+  <nodes>
+    <node x="260.5" y="220.0">org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor</node>
+    <node x="643.5" y="-14.0">org.springframework.aop.Advisor</node>
+    <node x="798.0" y="142.0">org.springframework.aop.aspectj.InstantiationModelAwarePointcutAdvisor</node>
+    <node x="554.0" y="142.0">org.springframework.aop.aspectj.AspectJPointcutAdvisor</node>
+    <node x="613.0" y="64.0">org.springframework.aop.PointcutAdvisor</node>
+    <node x="782.0" y="220.0">org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</node>
+    <node x="305.0" y="142.0">org.springframework.aop.support.AbstractPointcutAdvisor</node>
+    <node x="221.0" y="298.0">org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl" target="org.springframework.aop.aspectj.InstantiationModelAwarePointcutAdvisor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJPointcutAdvisor" target="org.springframework.aop.PointcutAdvisor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="666.0" y="122.0" />
+      <point x="542.75" y="122.0" />
+      <point x="542.75" y="112.0" />
+      <point x="654.75" y="112.0" />
+      <point x="-41.75" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.InstantiationModelAwarePointcutAdvisor" target="org.springframework.aop.PointcutAdvisor" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="973.5" y="122.0" />
+      <point x="738.25" y="122.0" />
+      <point x="41.75" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.support.AbstractPointcutAdvisor" target="org.springframework.aop.PointcutAdvisor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="419.5" y="122.0" />
+      <point x="542.75" y="122.0" />
+      <point x="542.75" y="112.0" />
+      <point x="654.75" y="112.0" />
+      <point x="-41.75" y="14.0" />
+    </edge>
+    <edge source="org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor" target="org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor" target="org.springframework.aop.support.AbstractPointcutAdvisor" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.PointcutAdvisor" target="org.springframework.aop.Advisor" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.4553941908713692" showDependencies="false" x="703.0" y="166.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
