@@ -25,8 +25,8 @@ public class TxConfiguration {
     private String password;
     @Value("${jdbc.url}")
     private String url;
-    @Value("${jdbc.driverClassName}")
-    private String driverClassname;
+    @Value("${jdbc.driver}")
+    private String driver;
 
     @Bean
     public DataSource dataSource() {
@@ -34,7 +34,7 @@ public class TxConfiguration {
         data.setUsername(username);
         data.setPassword(password);
         data.setUrl(url);
-        data.setDriverClassName(driverClassname);
+        data.setDriverClassName(driver);
         return data;
     }
 
