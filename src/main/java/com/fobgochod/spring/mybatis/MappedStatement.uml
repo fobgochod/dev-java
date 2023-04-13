@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.ibatis.mapping.MappedStatement</OriginalElement>
+  <nodes>
+    <node x="965.0" y="-660.0">org.apache.ibatis.scripting.xmltags.StaticTextSqlNode</node>
+    <node x="780.3671686961212" y="-834.4999999999999">org.apache.ibatis.mapping.MappedStatement</node>
+    <node x="817.3671686961212" y="-747.25">org.apache.ibatis.scripting.xmltags.SqlNode</node>
+    <node x="412.01923076923083" y="-582.0">org.apache.ibatis.scripting.xmltags.TrimSqlNode.FilteredDynamicContext</node>
+    <node x="412.01923076923083" y="-743.7735042735043">org.apache.ibatis.scripting.xmltags.DynamicSqlSource</node>
+    <node x="794.0625" y="-582.0">org.apache.ibatis.scripting.xmltags.WhereSqlNode</node>
+    <node x="798.0" y="-660.0">org.apache.ibatis.scripting.xmltags.TrimSqlNode</node>
+    <node x="618.0" y="-660.0">org.apache.ibatis.scripting.xmltags.MixedSqlNode</node>
+    <node x="450.72504273504273" y="-834.4999999999999">org.apache.ibatis.mapping.SqlSource</node>
+    <node x="412.01923076923083" y="-660.0">org.apache.ibatis.scripting.xmltags.DynamicContext</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.ibatis.scripting.xmltags.DynamicSqlSource" target="org.apache.ibatis.scripting.xmltags.SqlNode" relationship="TO_ONE">
+      <point x="93.0" y="-3.4764957264957275" />
+      <point x="-57.0" y="-0.0" />
+    </edge>
+    <edge source="org.apache.ibatis.mapping.MappedStatement" target="org.apache.ibatis.mapping.SqlSource" relationship="TO_ONE">
+      <point x="-94.0" y="-0.0" />
+      <point x="62.0" y="-0.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.TrimSqlNode.FilteredDynamicContext" target="org.apache.ibatis.scripting.xmltags.DynamicContext" relationship="GENERALIZATION">
+      <point x="-28.0" y="-14.0" />
+      <point x="-0.0" y="14.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.MixedSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode" relationship="REALIZATION">
+      <point x="-0.0" y="-14.0" />
+      <point x="698.0" y="-695.0" />
+      <point x="856.5" y="-695.0" />
+      <point x="-17.86716869612121" y="14.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.TrimSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode" relationship="REALIZATION">
+      <point x="15.0" y="-14.0" />
+      <point x="12.132831303878788" y="14.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.StaticTextSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode" relationship="REALIZATION">
+      <point x="-0.0" y="-14.0" />
+      <point x="1058.5" y="-732.358106169297" />
+      <point x="54.13073661234341" y="0.8918938307029975" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.DynamicSqlSource" target="org.apache.ibatis.mapping.SqlSource" relationship="REALIZATION">
+      <point x="7.705811965811904" y="-14.0" />
+      <point x="-0.0" y="14.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.TrimSqlNode.FilteredDynamicContext" target="org.apache.ibatis.scripting.xmltags.TrimSqlNode" relationship="INNER_CLASS">
+      <point x="56.5" y="-14.0" />
+      <point x="581.5192307692308" y="-607.0" />
+      <point x="834.75" y="-607.0" />
+      <point x="-36.75" y="14.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.WhereSqlNode" target="org.apache.ibatis.scripting.xmltags.TrimSqlNode" relationship="GENERALIZATION">
+      <point x="-3.5625" y="-14.0" />
+      <point x="-0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="782.0" y="-697.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
