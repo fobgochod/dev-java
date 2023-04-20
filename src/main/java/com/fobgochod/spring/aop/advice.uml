@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.aopalliance.aop.Advice</OriginalElement>
+  <nodes>
+    <node x="250.5" y="-14.0">org.aopalliance.aop.Advice</node>
+    <node x="971.5" y="142.0">org.springframework.aop.aspectj.AspectJAfterThrowingAdvice</node>
+    <node x="525.5" y="142.0">org.springframework.aop.aspectj.AspectJAroundAdvice</node>
+    <node x="296.5" y="142.0">org.springframework.aop.AfterReturningAdvice</node>
+    <node x="123.5" y="142.0">org.springframework.aop.ThrowsAdvice</node>
+    <node x="758.5" y="64.0">org.aopalliance.intercept.MethodInterceptor</node>
+    <node x="268.0" y="220.0">org.springframework.aop.aspectj.AspectJAfterReturningAdvice</node>
+    <node x="-103.5" y="142.0">org.springframework.aop.MethodBeforeAdvice</node>
+    <node x="-74.0" y="64.0">org.springframework.aop.BeforeAdvice</node>
+    <node x="757.5" y="142.0">org.springframework.aop.aspectj.AspectJAfterAdvice</node>
+    <node x="-132.0" y="220.0">org.springframework.aop.aspectj.AspectJMethodBeforeAdvice</node>
+    <node x="213.37068965517244" y="64.0">org.springframework.aop.AfterAdvice</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.AfterAdvice" target="org.aopalliance.aop.Advice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="281.87068965517244" y="39.0" />
+      <point x="300.5" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterThrowingAdvice" target="org.aopalliance.intercept.MethodInterceptor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="1103.0" y="117.0" />
+      <point x="854.5" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.BeforeAdvice" target="org.aopalliance.aop.Advice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="39.0" />
+      <point x="300.5" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAroundAdvice" target="org.aopalliance.intercept.MethodInterceptor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="631.5" y="117.0" />
+      <point x="854.5" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInterceptor" target="org.aopalliance.aop.Advice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="854.5" y="39.0" />
+      <point x="300.5" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.AfterReturningAdvice" target="org.springframework.aop.AfterAdvice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="401.0" y="117.0" />
+      <point x="281.87068965517244" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterReturningAdvice" target="org.springframework.aop.AfterReturningAdvice" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterAdvice" target="org.aopalliance.intercept.MethodInterceptor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.ThrowsAdvice" target="org.springframework.aop.AfterAdvice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="200.0" y="117.0" />
+      <point x="281.87068965517244" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJMethodBeforeAdvice" target="org.springframework.aop.MethodBeforeAdvice" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.aop.MethodBeforeAdvice" target="org.springframework.aop.BeforeAdvice" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.023071377072819" showDependencies="false" x="461.38724453840734" y="-9.478858350951384" />
+  <SelectedNodes>
+    <node>org.aopalliance.aop.Advice</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
