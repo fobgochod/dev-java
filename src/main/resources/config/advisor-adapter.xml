@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jdkCalculatorTarget" class="com.fobgochod.spring.aop.adapter.service.JdkCalculator"/>
+
+    <bean id="aspectJSummerAdvice" class="com.fobgochod.spring.aop.adapter.annotation.summer.AspectJSummerAdvice"/>
+
+    <bean id="summerAdvisor" class="com.fobgochod.spring.aop.adapter.annotation.summer.SummerAdvisor">
+        <property name="advice" ref="aspectJSummerAdvice"/>
+    </bean>
+
+    <bean id="jdkCalculator" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces" value="com.fobgochod.spring.aop.adapter.service.Calculator"/>
+        <property name="interceptorNames" value="summerAdvisor,jdkCalculatorTarget"/>
+    </bean>
+
+    <bean id="summerAdvisorAdapter" class="com.fobgochod.spring.aop.adapter.annotation.summer.SummerAdvisorAdapter"/>
+
+    <bean id="adapterRegistrationManager"
+          class="org.springframework.aop.framework.adapter.AdvisorAdapterRegistrationManager"/>
+
+</beans>
